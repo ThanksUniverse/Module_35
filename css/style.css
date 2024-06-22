@@ -1,0 +1,482 @@
+body {
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	color: #333333;
+}
+.navbar {
+	background-color: #ffffff;
+	padding: 0.5rem 1rem;
+	color: #333333;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #dddddd;
+}
+.navbar a {
+	color: #333333;
+	text-decoration: none;
+	margin: 0 0.5rem;
+}
+.navbar .logo a {
+	display: flex;
+	align-items: center;
+}
+.logo2 img {
+	display: none;
+}
+.navbar .logo img {
+	width: 40px;
+	height: auto;
+	margin-right: 0.5rem;
+}
+.navbar .dropdown {
+	position: relative;
+	display: inline-block;
+}
+.navbar .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #ffffff;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+.navbar .dropdown-content a {
+	color: #333333;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+.navbar .dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+.navbar .dropdown:hover .dropdown-content {
+	display: block;
+}
+.hero {
+	background: url("../images/hero.png") no-repeat center center/cover;
+	color: #ffffff;
+	text-align: center;
+	padding: 5rem 1rem;
+	height: 600px;
+}
+.hero h1 {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+.hero p {
+	font-size: 1.5rem;
+}
+.container {
+	padding: 2rem;
+}
+section {
+	padding: 3rem 2rem;
+}
+h2 {
+	border-bottom: 2px solid #4caf50;
+	padding-bottom: 0.5rem;
+	margin-bottom: 1rem;
+}
+.features {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+.feature {
+	background: #ffffff;
+	padding: 1.5rem;
+	text-align: center;
+	width: 30%;
+	min-width: 200px;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s;
+}
+.feature:hover {
+	transform: translateY(-10px);
+}
+.feature img {
+	width: 200px;
+	height: auto;
+	border-radius: 10px;
+	margin-bottom: 1rem;
+}
+.cta {
+	background-color: #333333;
+	color: #ffffff;
+	text-align: center;
+	padding: 2rem;
+}
+.cta h2 {
+	margin-bottom: 1rem;
+}
+.cta button {
+	background-color: #ffffff;
+	color: #333333;
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: bold;
+	transition: background-color 0.3s;
+}
+.cta button:hover {
+	background-color: #4caf50;
+	color: #ffffff;
+}
+.yeo-footer {
+	background-color: #333333;
+	color: #ffffff;
+	padding: 2rem 0;
+	text-align: center;
+}
+.footer-columns {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.footer-column {
+	margin: 1rem;
+}
+.footer-column h4 {
+	margin-bottom: 1rem;
+	font-size: 1.2rem;
+}
+.footer-column ul {
+	list-style: none;
+	padding: 0;
+}
+.footer-column li {
+	margin-bottom: 0.5rem;
+}
+.footer-column a {
+	color: #ffffff;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+.footer-column a:hover {
+	color: #4caf50;
+}
+.navbar {
+	background-color: #ffffff;
+	padding: 0.5rem 1rem;
+	color: #333333;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #dddddd;
+}
+
+.navbar nav {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.navbar a {
+	color: #333333;
+	text-decoration: none;
+	margin: 0 0.5rem;
+}
+
+@media (max-width: 768px) {
+	.navbar nav {
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+	.navbar a {
+		margin: 0.5rem 0;
+	}
+	.navbar .dropdown-content {
+		position: static;
+		box-shadow: none;
+	}
+	.feature {
+		width: 100%;
+	}
+	.logo {
+		display: none;
+	}
+	.logo2 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%; /* Garante que o contêiner ocupa toda a largura disponível */
+		margin: 0 auto; /* Centraliza o contêiner */
+	}
+
+	.logo2 img {
+		display: block; /* Certifica que a imagem é exibida como bloco */
+		width: 100px; /* Define o tamanho da imagem */
+		height: auto;
+	}
+}
+
+/* Cards Responsivos */
+.mission-vision-values .container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.mission-vision-values .card {
+	background: #ffffff;
+	padding: 1.5rem;
+	text-align: center;
+	width: 30%;
+	min-width: 200px;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s;
+	margin: 1rem;
+}
+
+@media (max-width: 768px) {
+	.mission-vision-values .container {
+		flex-direction: column;
+		align-items: center;
+	}
+	.mission-vision-values .card {
+		width: 90%;
+	}
+}
+@media (max-width: 768px) {
+	.footer-columns {
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer-column {
+		margin-bottom: 1.5rem;
+	}
+}
+.section-alternate {
+	background-color: #f1f1f1;
+}
+.numbers-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+	background-color: #f1f1f1;
+}
+.numbers-section .text {
+	max-width: 800px;
+	text-align: center;
+}
+.numbers-section .numbers {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2rem;
+}
+.numbers-section .numbers div {
+	margin: 1rem 0;
+	text-align: center;
+}
+.numbers-section .numbers span {
+	display: block;
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+.partners {
+	padding: 2rem 0;
+	text-align: center;
+}
+.partners img {
+	max-width: 150px;
+	margin: 1rem;
+}
+.tooltip {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	background: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	z-index: 1000;
+}
+.onde-nos-encontrar {
+	padding: 3rem 2rem;
+	background-color: #f9f9f9;
+	text-align: center;
+}
+
+.onde-nos-encontrar h2 {
+	border-bottom: 2px solid #4caf50;
+	padding-bottom: 0.5rem;
+	margin-bottom: 1rem;
+	color: #333333;
+}
+
+.onde-nos-encontrar p {
+	font-size: 1.2rem;
+	color: #666666;
+	margin-bottom: 1rem;
+}
+
+.mapouter {
+	margin: 1rem auto;
+	text-align: center;
+}
+
+.gmap_canvas {
+	overflow: hidden;
+	background: none !important;
+	height: 500px;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+	.gmap_canvas {
+		height: 300px;
+		width: 100%;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #121212;
+		color: #ffffff;
+	}
+	.logo2 {
+		background-color: #333333;
+	}
+	.navbar {
+		background-color: #333333;
+		color: #ffffff;
+		border-bottom: 1px solid #444444;
+	}
+	.feature {
+		background: #333333;
+	}
+	.navbar a {
+		color: #ffffff;
+	}
+	.navbar .dropdown-content {
+		background-color: #333333;
+	}
+	.navbar .dropdown-content a {
+		color: #ffffff;
+	}
+	.navbar .dropdown-content a:hover {
+		background-color: #444444;
+	}
+	.cta {
+		background-color: #444444;
+	}
+	.cta button {
+		background-color: #ffffff;
+		color: #444444;
+	}
+	.cta button:hover {
+		background-color: #4caf50;
+		color: #ffffff;
+	}
+	.yeo-footer {
+		background-color: #121212;
+	}
+	.footer-column a:hover {
+		color: #4caf50;
+	}
+	.section-alternate {
+		background-color: #222222;
+	}
+	.numbers-section {
+		background-color: #222222;
+	}
+	.onde-nos-encontrar {
+		padding: 3rem 2rem;
+		background-color: #121212;
+		text-align: center;
+		color: #ffffff;
+	}
+
+	.onde-nos-encontrar h2 {
+		color: #ffffff;
+	}
+
+	.onde-nos-encontrar p {
+		color: #ffffff;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	body {
+		background-color: #ffffff;
+		color: #333333;
+	}
+	.logo2 {
+		background-color: #ffffff;
+	}
+	.navbar {
+		background-color: #ffffff;
+		color: #333333;
+		border-bottom: 1px solid #dddddd;
+	}
+	.feature {
+		background: #ffffff;
+	}
+	.navbar a {
+		color: #333333;
+	}
+	.navbar .dropdown-content {
+		background-color: #ffffff;
+	}
+	.navbar .dropdown-content a {
+		color: #333333;
+	}
+	.navbar .dropdown-content a:hover {
+		background-color: #f1f1f1;
+	}
+	.cta {
+		background-color: #f1f1f1;
+		color: #333333;
+	}
+	.cta button {
+		background-color: #333333;
+		color: #ffffff;
+	}
+	.cta button:hover {
+		background-color: #4caf50;
+		color: #ffffff;
+	}
+	.yeo-footer {
+		background-color: #ffffff;
+		color: #333333;
+	}
+	.footer-column a:hover {
+		color: #4caf50;
+	}
+	.footer-column a {
+		color: #333333;
+		text-decoration: none;
+		transition: color 0.3s;
+	}
+	.section-alternate {
+		background-color: #f1f1f1;
+	}
+	.numbers-section {
+		background-color: #f1f1f1;
+	}
+	.onde-nos-encontrar {
+		padding: 3rem 2rem;
+		background-color: #ffffff;
+		text-align: center;
+		color: #333;
+	}
+
+    .onde-nos-encontrar h2 {
+		color: #333333;
+	}
+
+	.onde-nos-encontrar p {
+		color: #333333;
+	}
+}
